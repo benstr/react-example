@@ -17,8 +17,6 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 react
 meteorhacks:npm
 cosmos:browserify
-session
-blaze-html-templates
 
 
 npm-container
