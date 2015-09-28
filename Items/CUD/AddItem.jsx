@@ -1,15 +1,15 @@
 AddItem = React.createClass({
-  getInitialState: function() {
+  getInitialState() {
     return {};
   },
-  addItem: function(e) {
+  addItem(e) {
     e.preventDefault();
     var item = React.findDOMNode(this.refs.input).value;
 
     ItemsCollection.insert({'content': item});
     React.findDOMNode(this.refs.input).value = "";
   },
-  render: function () {
+  render() {
     return (
       <form onSubmit={this.addItem}>
         <input type="text" ref="input"/>

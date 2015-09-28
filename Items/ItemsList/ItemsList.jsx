@@ -1,8 +1,8 @@
 ItemsList = React.createClass({
-  getInitialState: function() {
+  getInitialState() {
     return {};
   },
-  render: function () {
+  render() {
     return (
       <ul>
         {this.props.items.map(function (item) {
