@@ -13,15 +13,21 @@ ItemsPage = React.createClass({
     // Show a loading indicator if data is not ready
     if (this.data.itemsLoading) {
       return (
-        <div>
-          <h1>Loading</h1>
+        <div id="items-page" class="loading">
+          <ReactRouter.Link to="/">Take me back home</ReactRouter.Link>
+          <h2>Loading</h2>
         </div>
       );
     }
 
     // Render a component and pass down the loaded data
     return (
-      <ItemsList items={this.data.items}/>
+      <div id="items-page">
+        <ReactRouter.Link to="/">Take me back home</ReactRouter.Link>
+        <h2>Items</h2>
+        <ItemsList items={this.data.items}/>
+        <AddItem />
+      </div>
     );
   }
 });

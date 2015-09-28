@@ -11,12 +11,10 @@ AddItem = React.createClass({
   },
   render: function () {
     return (
-      <div>
-        <form onSubmit={this.addItem}>
-          <input type="text" ref="input"/>
-          <button type="submit">Add Item</button>
-        </form>
-      </div>
+      <form onSubmit={this.addItem}>
+        <input type="text" ref="input"/>
+        <button type="submit">Add Item</button>
+      </form>
     );
   }
 });
